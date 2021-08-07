@@ -1,0 +1,57 @@
+
+body {
+    background-size: 1500px 2500px;
+    color: rgb(98, 124, 163);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0;
+}
+
+.navtop {
+    background-color: rgb(1, 40, 63);
+    overflow: hidden;
+}
+
+.navtop a {
+    float: left;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    height: 26px;
+}
+
+.video-container{
+    width: 200px;
+    overflow:hidden;
+    display:block;
+    height: 200px;
+    max-width: 1920px;
+    position: relative;
+    margin: auto; 
+    margin-left: -220px; 
+}
+
+.mainpage {
+    margin-left: 160px; 
+    margin-right: 160px;
+    margin-top: 50px;
+    padding: 0px 10px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 160px; 
+    margin-right: 160px;
+    margin-top: 50px;
+    padding: 0px 10px;
+  }
+  .emote{
+    width: 250px;
+    float: left;
+  }
