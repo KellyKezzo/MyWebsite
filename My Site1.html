@@ -7,13 +7,23 @@
     </head>
     <body>
         <div class= "navtop">
-            <a class="active" href="My Site.html" id="navfirst"> Homepage</a>
+            <a class="active" href="My Site1.html" id="navfirst"> Homepage</a>
             <a href="about.html"> About me </a>
-            <a href="assignments.html"> Leading Projects</a>
+                <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()"> Leading Projects
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                    <a href="coding.html"> Website Programming</a>
+                    <a href="3D.html"> 3D Printing</a>
+                    <a href="laser.html"> Laser Cutting</a>
+                    <a href="Arduino.html"> Arduino Programming </a>
+                </div>
+            </div>
             <a href="finalproject.html"> Final Project</a>
         </div> 
         <div class="videocontainer">
-            <video id="draft" width="640" height="360" controls autoplay muted loop>
+            <video id="draft" controls autoplay muted loop width="500px" height="500px">
                 <source src="img/Draft_idea.mp4" type="video/mp4">
             </video>
         </div>     
@@ -30,5 +40,22 @@
                 <li> Final Project </li>
             </ul>
         </div>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+            </script>
     </body>
 </html>
